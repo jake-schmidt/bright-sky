@@ -11,9 +11,9 @@ data = JSON.parse(station_json)
 
 # TO DO: Change this code to store the correct, live data
 # into the appropriate variables.
-station_name = "Buckingham Fountain"
-bike_count = 5
-dock_count = 3
+station_name = data["stationName"]
+bike_count = data["availableBikes"]
+dock_count = data["availableDocks"]
 
 # Do not touch the code below this line.
 print "The nearest station is #{station_name}.\n"

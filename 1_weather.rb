@@ -12,7 +12,7 @@ data = JSON.parse(weather_json)
 
 # TO DO: Change this code to fetch the temperature
 # from the `data` variable.
-temperature = 0
+temperature = data["main"]["temp"]
 
 # Do not touch the code below this line.
 print "It is #{temperature} degrees outside. \n"
